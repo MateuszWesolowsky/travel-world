@@ -13,8 +13,6 @@
   flex-direction: column;
   transform: translateY(50%);
   gap: 2rem;
-
-  /* Different from other form */
   width: 48rem;
   margin: 8rem auto;
 }
@@ -24,6 +22,7 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .ctaLink
 {
   background-color: var(--color-brand--2);
