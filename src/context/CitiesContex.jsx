@@ -1,30 +1,12 @@
-import {
-	ReactNode,
-	createContext,
-	useContext,
-	useEffect,
-	useState,
-} from "react";
-import CityTypes from "../types";
-
-interface CitiesContexttProps {
-	cities: CityTypes[];
-	isLoading: boolean;
-	currentCity: CityTypes | object;
-	getCity: (id: string) => void;
-}
-
-interface CitiesProviderProps {
-	children: ReactNode;
-}
+import { createContext, useContext, useEffect, useState } from "react";
 
 const BASE_URL = `http://localhost:9000`;
 
-const CitiesContext = createContext<CitiesContexttProps | null>(null);
+const CitiesContext = createContext(null);
 
-function CitiesProvider({ children }: CitiesProviderProps) {
-	const [cities, setCities] = useState<CityTypes[]>([]);
-	const [isLoading, setIsLoading] = useState<boolean>(false);
+function CitiesProvider({ children }) {
+	const [cities, setCities] = useState([]);
+	const [isLoading, setIsLoading] = useState(false);
 	const [currentCity, setCurrentCity] = useState({});
 
 	useEffect(() => {
@@ -32,7 +14,7 @@ function CitiesProvider({ children }: CitiesProviderProps) {
 			try {
 				setIsLoading(true);
 				const res = await fetch(`${BASE_URL}/cities`);
-				const data: CityTypes[] = await res.json();
+				const data = await res.json();
 				setCities(data);
 			} catch {
 				alert(`There was an error loading..`);
@@ -43,7 +25,7 @@ function CitiesProvider({ children }: CitiesProviderProps) {
 		fetchCities();
 	}, []);
 
-	async function getCity(id: string) {
+	async function getCity(id) {
 		try {
 			setIsLoading(true);
 			const res = await fetch(`${BASE_URL}/cities/${id}`);

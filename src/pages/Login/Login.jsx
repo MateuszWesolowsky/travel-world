@@ -1,9 +1,8 @@
 import { useState } from "react";
 import styles from "./Login.module.css";
-import PageNav from "../components/PageNav";
+import PageNav from "../../components/PageNav/PageNav";
 
 export default function Login() {
-
 	const [email, setEmail] = useState("jack@example.com");
 	const [password, setPassword] = useState("qwerty");
 

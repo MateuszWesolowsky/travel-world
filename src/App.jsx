@@ -2,16 +2,16 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import "./index.css";
 
-import Product from "./pages/Product";
-import Pricing from "./pages/Pricing";
-import Homepage from "./pages/Homepage";
-import AppLayout from "./pages/AppLayout";
-import PageNotFound from "./pages/PageNotFound";
-import Login from "./pages/Login";
-import CityList from "./components/CityList";
-import CountryList from "./components/CountryList";
-import City from "./components/City";
-import Form from "./components/Form";
+import Product from "./pages/Product/Product";
+import Pricing from "./pages/Pricing/Pricing";
+import Homepage from "./pages/Homepage/Homepage";
+import AppLayout from "./pages/AppLayout/AppLayout";
+import PageNotFound from "./pages/NotFound/PageNotFound";
+import Login from "./pages/Login/Login";
+import CityList from "./components/CityList/CityList";
+import CountryList from "./components/CountryList/CountryList";
+import City from "./components/City/City";
+import Form from "./components/Form/Form";
 import { CitiesProvider } from "./context/CitiesContex";
 
 function App() {
