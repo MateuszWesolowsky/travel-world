@@ -10,6 +10,7 @@ const formatDate = (date) =>
 	}).format(new Date(date));
 
 function CityItem({ city }) {
+	
 	return (
 		<li >
 			<Link className={styles.cityItem} to={`${city.id}?lat=${city.position.lat}&lng=${city.position.lng}`}>
