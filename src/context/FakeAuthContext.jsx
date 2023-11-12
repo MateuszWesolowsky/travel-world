@@ -50,12 +50,11 @@ function AuthProvider({ children }) {
 				type: "login",
 				payload: FAKE_USER,
 			});
-			if(FAKE_USER.email !== email || FAKE_USER.password !== password) {
-				dispatch({
-					type: "error",
-				})
-			}
-			
+		if (FAKE_USER.email !== email || FAKE_USER.password !== password) {
+			dispatch({
+				type: "error",
+			});
+		}
 	};
 	const logout = () => {
 		dispatch({
