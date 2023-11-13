@@ -24,7 +24,7 @@ function CityItem({ city }) {
 					city.id === currentCity.id ? styles["cityItem--active"] : ""
 				}`}
 				to={`${city.id}?lat=${city.position.lat}&lng=${city.position.lng}`}>
-				<span className={styles.emoji}>{city.emoji}</span>
+				<span className={styles.countryCode}>{city.countryCode}</span>
 				<h3 className={styles.name}>{city.cityName}</h3>
 				<time className={styles.date}>({formatDate(city.date)})</time>
 				<button className={styles.deleteBtn} onClick={handleDelete}>
