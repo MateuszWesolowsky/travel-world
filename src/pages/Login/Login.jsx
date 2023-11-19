@@ -50,12 +50,12 @@ export default function Login() {
 					/>
 				</div>
 
-				<div>
+				<div className={styles.loginBtn}>
 					<Button onClick={handleLogin} type='primary'>
 						Login
 					</Button>
-					{error && <Message message='Wrong email or password !' />}
 				</div>
+				{error && <Message message='Wrong email or password !' />}
 			</form>
 		</main>
 	);

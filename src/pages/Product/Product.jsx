@@ -6,12 +6,8 @@ export default function Product() {
 		<main className={styles.product}>
 			<PageNav />
 			<section>
-				<img
-					src='img-1.jpg'
-					alt='person with dog overlooking mountain with sunset'
-				/>
 				<div>
-					<h2>About TravelWorld.</h2>
+					<h2>Travel World App!</h2>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo est
 						dicta illum vero culpa cum quaerat architecto sapiente eius non

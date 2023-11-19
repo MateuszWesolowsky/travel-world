@@ -2,10 +2,17 @@
 	padding: 2.5rem 5rem;
 	background-color: var(--color-dark--1);
 	min-height: 100vh;
+	background-image: linear-gradient(
+		rgba(37, 40, 42, 0.5),
+		rgba(77, 83, 87, 0.5)
+	),
+	url("../product.jpg");
+background-size: cover;
+background-position: center;
 }
 
 .form {
-	background-color: var(--color-dark--2);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 	border-radius: 7px;
 	padding: 2rem 3rem;
 	width: 100%;
@@ -15,6 +22,9 @@
 	gap: 2rem;
 	width: 48rem;
 	margin: 8rem auto;
+}
+.loginBtn {
+	margin: 0 auto;
 }
 
 .row {
