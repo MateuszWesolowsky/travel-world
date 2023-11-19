@@ -12,12 +12,13 @@ import Form from "./components/Form/Form";
 import SpinnerFullPage from "./components/Spinner/SpinnerFullPage";
 
 const Homepage = lazy(() => import("./pages/Homepage/Homepage"));
-const Pricing = lazy(() => import("./pages/Pricing/Pricing"));
+const About = lazy(() => import("./pages/About/About"));
 const Product = lazy(() => import("./pages/Product/Product"));
 const Login = lazy(() => import("./pages/Login/Login"));
 const AppLayout = lazy(() => import("./pages/AppLayout/AppLayout"));
 const PageNotFound = lazy(() => import("./pages/NotFound/PageNotFound"));
 
+//before lazy loading
 // dist/assets/index-bfa719f9.css   31.88 kB │ gzip:   5.27 kB
 // dist/assets/index-aea42fff.js   528.25 kB │ gzip: 149.61 kB
 
@@ -29,7 +30,7 @@ function App() {
 					<Suspense fallback={<SpinnerFullPage />}>
 						<Routes>
 							<Route index element={<Homepage />} />
-							<Route path='pricing' element={<Pricing />} />
+							<Route path='about' element={<About />} />
 							<Route path='product' element={<Product />} />
 							<Route path='login' element={<Login />} />
 							<Route
