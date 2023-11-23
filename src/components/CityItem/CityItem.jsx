@@ -11,19 +11,18 @@ const formatDate = (date) =>
 
 function CityItem({ city }) {
 	const { currentCity, deleteCity } = useCities();
-
 	const handleDelete = (e) => {
 		e.preventDefault();
-		deleteCity(city.id);
+		deleteCity(city._id);
 	};
 
 	return (
 		<li>
 			<Link
 				className={`${styles.cityItem} ${
-					city.id === currentCity.id ? styles["cityItem--active"] : ""
+					city._id === currentCity._id ? styles["cityItem--active"] : ""
 				}`}
-				to={`${city.id}?lat=${city.position.lat}&lng=${city.position.lng}`}>
+				to={`${city._id}?lat=${city.position.lat}&lng=${city.position.lng}`}>
 				<span className={styles.countryCode}>{city.countryCode}</span>
 				<h3 className={styles.name}>{city.cityName}</h3>
 				<time className={styles.date}>({formatDate(city.date)})</time>
