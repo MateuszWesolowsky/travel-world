@@ -50,9 +50,7 @@ function Form() {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-
 		if (!cityName || !date) return;
-
 		const newCity = {
 			cityName,
 			country,
@@ -60,7 +58,6 @@ function Form() {
 			date,
 			notes,
 			position: { lat, lng },
-			//id - is going to be automatically created by the JSON server
 		};
 		await createCity(newCity);
 		navigate("/app/cities");
