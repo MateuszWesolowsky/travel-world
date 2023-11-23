@@ -6,7 +6,7 @@ import {
 	useReducer,
 } from "react";
 
-const BASE_URL = `http://localhost:9000`;
+const BASE_URL = `http://localhost:8000`;
 
 const CitiesContext = createContext(null);
 
@@ -47,7 +47,7 @@ const reducer = (state, action) => {
 			return {
 				...state,
 				isLoading: false,
-				cities: state.cities.filter((city) => city.id !== action.payload),
+				cities: state.cities.filter((city) => city._id !== action.payload),
 				currentCity: {},
 			};
 		case "rejected":
@@ -91,7 +91,7 @@ function CitiesProvider({ children }) {
 
 	const getCity = useCallback(
 		async function getCity(id) {
-			if (Number(id) === currentCity.id) return;
+			if (id === currentCity._id) return;
 			dispatch({
 				type: "loading",
 			});
@@ -109,7 +109,7 @@ function CitiesProvider({ children }) {
 				});
 			}
 		},
-		[currentCity.id]
+		[currentCity._id]
 	);
 
 	async function createCity(newCity) {
