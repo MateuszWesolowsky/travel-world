@@ -1,8 +1,6 @@
 <p align="center">
-![image](https://github.com/MateuszWesolowsky/travel-world/assets/103283398/6e77a45d-3918-46c2-8797-207cb9b28b9f)
-
+    <img width="200" src="[https://i0.wp.com/www.dafontfree.io/wp-content/uploads/2021/11/League-of-Legends-logos-Font.jpg?fit=800%2C450&ssl=1](https://images.ctfassets.net/13indbtdj8hn/3xN8aJZmGiSGxtTJbNF9nV/ad0f70f97661f480c26ea1bdfa9742ab/tw_logo_horizontal_2.png)" alt="logo">
 </p>
-
 <h2>About the project:</h2>
 
 This app provides a user-friendly platform for marking places in the world that you have visited. User can log in to perform tasks such as adding, deleting, marking places on map and get current position. All data is securely stored in the database, ensuring reliability.
