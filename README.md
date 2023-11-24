@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="200" src="[https://i0.wp.com/www.dafontfree.io/wp-content/uploads/2021/11/League-of-Legends-logos-Font.jpg?fit=800%2C450&ssl=1](https://images.ctfassets.net/13indbtdj8hn/3xN8aJZmGiSGxtTJbNF9nV/ad0f70f97661f480c26ea1bdfa9742ab/tw_logo_horizontal_2.png)" alt="logo">
+    <img width="200" src="https://images.ctfassets.net/13indbtdj8hn/3xN8aJZmGiSGxtTJbNF9nV/ad0f70f97661f480c26ea1bdfa9742ab/tw_logo_horizontal_2.png" alt="logo">
 </p>
 <h2>About the project:</h2>
 
