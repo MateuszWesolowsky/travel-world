@@ -30,8 +30,9 @@ Aplication layout 🐱‍🏍
 </p>
 
 ![image](https://github.com/MateuszWesolowsky/travel-world/assets/103283398/c63dd9cd-ba6e-4c14-a08d-44044647a0c1)
+<p align="center">
 ![image](https://github.com/MateuszWesolowsky/travel-world/assets/103283398/a23edf55-3470-4580-b94e-93a3aeeb2b80)
-
+</p>
 
 <h2>Tech Stack</h2><br/>
 Client: React(Vite, Context API), CSS modules
