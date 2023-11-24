@@ -1,5 +1,6 @@
 <p align="center">
-![logo](https://github.com/MateuszWesolowsky/travel-world/assets/103283398/95aa9ceb-6bbd-49a4-ac86-7f52e58cacb7)
+![image](https://github.com/MateuszWesolowsky/travel-world/assets/103283398/6e77a45d-3918-46c2-8797-207cb9b28b9f)
+
 </p>
 
 <h2>About the project:</h2>
